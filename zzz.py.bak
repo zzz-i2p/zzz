@@ -1,54 +1,51 @@
 # -*- coding: utf-8 -*-
 ##
-from __future__ import absolute_import
-from __future__ import print_function
 import os
 import sys
 from time import sleep as timeout
 from core.zzzcore import *
-from six.moves import input
 
 def main():
 	banner()
-	print("   [01] Сбор Информации")
-	print("   [02] Сканер Уязвимостей")
-	print("   [03] Стресс-Тестирование")
-	print("   [04] Пароль Атаки")
-	print("   [05] Веб-Хакинга")
-	print("   [06] Инструменты Эксплуатации")
-	print("   [07] Sniffing & Spoofing")
-	print("   [08] Другие\n")
-	print("   [10] Выход\n")
-	zzz = input("$zzz ")
+	print "   [01] Сбор Информации"
+	print "   [02] Сканер Уязвимостей"
+	print "   [03] Стресс-Тестирование"
+	print "   [04] Пароль Атаки"
+	print "   [05] Веб-Хакинга"
+	print "   [06] Инструменты Эксплуатации"
+	print "   [07] Sniffing & Spoofing"
+	print "   [08] Другие\n"
+	print "   [10] Выход\n"
+	zzz = raw_input("$zzz ")
 	
 	if zzz == "1" or zzz == "01":
-		print("\n    [01] Nmap")
-		print("    [02] Red Hawk")
-		print("    [03] D-Tect")
-		print("    [04] sqlmap")
-		print("    [05] Infoga")
-		print("    [06] ReconDog")
-		print("    [07] AndroZenmap")
-		print("    [08] sqlmate")
-		print("    [09] AstraNmap")
-		print("    [10] WTF")
-		print("    [11] Easymap")
-		print("    [12] BlackBox")
-		print("    [13] XD3v")
-		print("    [14] Crips")
-		print("    [15] SIR")
-		print("    [16] EvilURL")
-		print("    [17] Striker")
-		print("    [18] Xshell")
-		print("    [19] OWScan")
-		print("    [20] OSIF")
-		print("    [21] Devploit")
-		print("    [22] Namechk")
-		print("    [23] AUXILE")
-		print("    [24] inther")
-		print("    [25] GINF\n")
-		print("    [00] Главное меню\n")
-		infogathering = input("$zzz ")
+		print "\n    [01] Nmap"
+		print "    [02] Red Hawk"
+		print "    [03] D-Tect"
+		print "    [04] sqlmap"
+		print "    [05] Infoga"
+		print "    [06] ReconDog"
+		print "    [07] AndroZenmap"
+		print "    [08] sqlmate"
+		print "    [09] AstraNmap"
+		print "    [10] WTF"
+		print "    [11] Easymap"
+		print "    [12] BlackBox"
+		print "    [13] XD3v"
+		print "    [14] Crips"
+		print "    [15] SIR"
+		print "    [16] EvilURL"
+		print "    [17] Striker"
+		print "    [18] Xshell"
+		print "    [19] OWScan"
+		print "    [20] OSIF"
+		print "    [21] Devploit"
+		print "    [22] Namechk"
+		print "    [23] AUXILE"
+		print "    [24] inther"
+		print "    [25] GINF\n"
+		print "    [00] Главное меню\n"
+		infogathering = raw_input("$zzz ")
 		
 		if infogathering == "01" or infogathering == "1":
 			nmap()
@@ -103,36 +100,36 @@ def main():
 		elif infogathering == "00" or infogathering == "0":
 			restart_program()
 		else:
-			print("\nОшибка: неверный ввод")
+			print "\nОшибка: неверный ввод"
 			timeout(2)
 			restart_program()
 
 	elif zzz == "2" or zzz == "02":
-		print("\n    [01] Nmap")
-		print("    [02] AndroZenmap")
-		print("    [03] AstraNmap")
-		print("    [04] Easymap")
-		print("    [05] Red Hawk")
-		print("    [06] D-Tect")
-		print("    [07] Damn Small SQLi Scanner")
-		print("    [08] SQLiv")
-		print("    [09] sqlmap")
-		print("    [10] sqlscan")
-		print("    [11] Wordpresscan")
-		print("    [12] WPScan")
-		print("    [13] sqlmate")
-		print("    [14] wordpresscan")
-		print("    [15] WTF")
-		print("    [16] Rang3r")
-		print("    [17] Striker")
-		print("    [18] Routersploit")
-		print("    [19] Xshell")
-		print("    [20] SH33LL")
-		print("    [21] BlackBox")
-		print("    [22] XAttacker")
-		print("    [23] OWScan\n")
-		print("    [00] Back to main menu\n")
-		vulnscan = input("$zzz ")
+		print "\n    [01] Nmap"
+		print "    [02] AndroZenmap"
+		print "    [03] AstraNmap"
+		print "    [04] Easymap"
+		print "    [05] Red Hawk"
+		print "    [06] D-Tect"
+		print "    [07] Damn Small SQLi Scanner"
+		print "    [08] SQLiv"
+		print "    [09] sqlmap"
+		print "    [10] sqlscan"
+		print "    [11] Wordpresscan"
+		print "    [12] WPScan"
+		print "    [13] sqlmate"
+		print "    [14] wordpresscan"
+		print "    [15] WTF"
+		print "    [16] Rang3r"
+		print "    [17] Striker"
+		print "    [18] Routersploit"
+		print "    [19] Xshell"
+		print "    [20] SH33LL"
+		print "    [21] BlackBox"
+		print "    [22] XAttacker"
+		print "    [23] OWScan\n"
+		print "    [00] Back to main menu\n"
+		vulnscan = raw_input("$zzz ")
 		
 		if vulnscan == "01" or vulnscan == "1":
 			nmap()
@@ -183,23 +180,23 @@ def main():
 		elif vulnscan == "00" or vulnscan == "0":
 			restart_program()
 		else:
-			print("\nERROR: Wrong Input")
+			print "\nERROR: Wrong Input"
 			timeout(2)
 			restart_program()
 	
 	elif zzz == "3" or zzz == "03":
-		print("\n    [01] Torshammer")
-		print("    [02] Slowloris")
-		print("    [03] Fl00d & Fl00d2")
-		print("    [04] GoldenEye")
-		print("    [05] Xerxes")
-		print("    [06] Planetwork-DDOS")
-		print("    [07] Hydra")
-		print("    [08] Black Hydra")
-		print("    [09] Xshell")
-		print("    [10] santet-online\n")
-		print("    [00] Back to main menu\n")
-		stresstest = input("$zzz ")
+		print "\n    [01] Torshammer"
+		print "    [02] Slowloris"
+		print "    [03] Fl00d & Fl00d2"
+		print "    [04] GoldenEye"
+		print "    [05] Xerxes"
+		print "    [06] Planetwork-DDOS"
+		print "    [07] Hydra"
+		print "    [08] Black Hydra"
+		print "    [09] Xshell"
+		print "    [10] santet-online\n"
+		print "    [00] Back to main menu\n"
+		stresstest = raw_input("$zzz ")
 		
 		if stresstest == "01" or stresstest == "1":
 			torshammer()
@@ -224,31 +221,31 @@ def main():
 		elif stresstest == "00" or stresstest == "0":
 			restart_program()
 		else:
-			print("\nERROR: Wrong Input")
+			print "\nERROR: Wrong Input"
 			timeout(2)
 			restart_program()
 	
 	elif zzz == "4" or zzz == "04":
-		print("\n    [01] Hydra")
-		print("    [02] Facebook Brute Force")
-		print("    [03] Facebook Brute Force 2")
-		print("    [04] Facebook Brute Force 3")
-		print("    [05] Black Hydra")
-		print("    [06] Hash Buster")
-		print("    [07] 1337Hash")
-		print("    [08] Cupp")
-		print("    [09] InstaHack")
-		print("    [10] Indonesian Wordlist")
-		print("    [11] Xshell")
-		print("    [12] Social-Engineering")
-		print("    [13] BlackBox")
-		print("    [14] Hashzer")
-		print("    [15] Hasher")
-		print("    [16] Hash-Generator")
-		print("    [17] nk26")
-		print("    [18] Hasherdotid\n")
-		print("    [00] Back to main menu\n")
-		passtak = input("$zzz ")
+		print "\n    [01] Hydra"
+		print "    [02] Facebook Brute Force"
+		print "    [03] Facebook Brute Force 2"
+		print "    [04] Facebook Brute Force 3"
+		print "    [05] Black Hydra"
+		print "    [06] Hash Buster"
+		print "    [07] 1337Hash"
+		print "    [08] Cupp"
+		print "    [09] InstaHack"
+		print "    [10] Indonesian Wordlist"
+		print "    [11] Xshell"
+		print "    [12] Social-Engineering"
+		print "    [13] BlackBox"
+		print "    [14] Hashzer"
+		print "    [15] Hasher"
+		print "    [16] Hash-Generator"
+		print "    [17] nk26"
+		print "    [18] Hasherdotid\n"
+		print "    [00] Back to main menu\n"
+		passtak = raw_input("$zzz ")
 		
 		if passtak == "01" or passtak == "1":
 			hydra()
@@ -289,36 +286,36 @@ def main():
 		elif passtak == "00" or passtak == "0":
 			restart_program()
 		else:
-			print("\nERROR: Wrong Input")
+			print "\nERROR: Wrong Input"
 			timeout(2)
 			restart_program()
 	
 	elif zzz == "5" or zzz == "05":
-		print("\n    [01] sqlmap")
-		print("    [02] Webdav")
-		print("    [03] xGans")
-		print("    [04] Webdav Mass Exploit")
-		print("    [05] WPSploit")
-		print("    [06] sqldump")
-		print("    [07] Websploit")
-		print("    [08] sqlmate")
-		print("    [09] sqlokmed")
-		print("    [10] zones")
-		print("    [11] Xshell")
-		print("    [12] SH33LL")
-		print("    [13] XAttacker")
-		print("    [14] XSStrike")
-		print("    [15] Breacher")
-		print("    [16] OWScan")
-		print("    [17] ko-dork")
-		print("    [18] ApSca")
-		print("    [19] amox")
-		print("    [20] FaDe")
-		print("    [21] AUXILE")
-		print("    [22] HPB")
-		print("    [23] inther\n")
-		print("    [00] Back to main menu\n")
-		webhack = input("$zzz ")
+		print "\n    [01] sqlmap"
+		print "    [02] Webdav"
+		print "    [03] xGans"
+		print "    [04] Webdav Mass Exploit"
+		print "    [05] WPSploit"
+		print "    [06] sqldump"
+		print "    [07] Websploit"
+		print "    [08] sqlmate"
+		print "    [09] sqlokmed"
+		print "    [10] zones"
+		print "    [11] Xshell"
+		print "    [12] SH33LL"
+		print "    [13] XAttacker"
+		print "    [14] XSStrike"
+		print "    [15] Breacher"
+		print "    [16] OWScan"
+		print "    [17] ko-dork"
+		print "    [18] ApSca"
+		print "    [19] amox"
+		print "    [20] FaDe"
+		print "    [21] AUXILE"
+		print "    [22] HPB"
+		print "    [23] inther\n"
+		print "    [00] Back to main menu\n"
+		webhack = raw_input("$zzz ")
 		
 		if webhack == "01" or webhack == "1":
 			sqlmap()
@@ -369,25 +366,25 @@ def main():
 		elif webhack == "00" or webhack == "0":
 			restart_program()
 		else:
-			print("\nERROR: Wrong Input")
+			print "\nERROR: Wrong Input"
 			timeout(2)
 			restart_program()
 	elif zzz == "6" or zzz == "06":
-		print("\n    [01] Metasploit")
-		print("    [02] commix")
-		print("    [03] sqlmap")
-		print("    [04] Brutal")
-		print("    [05] A-Rat")
-		print("    [06] WPSploit")  
-		print("    [07] Websploit")
-		print("    [08] Routersploit")
-		print("    [09] BlackBox")
-		print("    [10] XAttacker")
-		print("    [11] TXTool")
-		print("    [12] MSF-Pg")
-		print("    [13] Binary Exploitation\n")
-		print("    [00] Back to main menu\n")
-		exploitool = input("$zzz ")
+		print "\n    [01] Metasploit"
+		print "    [02] commix"
+		print "    [03] sqlmap"
+		print "    [04] Brutal"
+		print "    [05] A-Rat"
+		print "    [06] WPSploit"  
+		print "    [07] Websploit"
+		print "    [08] Routersploit"
+		print "    [09] BlackBox"
+		print "    [10] XAttacker"
+		print "    [11] TXTool"
+		print "    [12] MSF-Pg"
+		print "    [13] Binary Exploitation\n"
+		print "    [00] Back to main menu\n"
+		exploitool = raw_input("$zzz ")
 		
 		if exploitool == "01" or exploitool == "1":
 			metasploit()
@@ -418,19 +415,19 @@ def main():
 		elif exploitool == "00" or exploitool == "0":
 			restart_program()
 		else:
-			print("\nERROR: Wrong Input")
+			print "\nERROR: Wrong Input"
 			timeout(2)
 			restart_program()
 	elif zzz == "7" or zzz == "07":
-		print("\n    [01] KnockMail")
-		print("    [02] Spammer-Grab")
-		print("    [03] Hac")
-		print("    [04] Spammer-Email")
-		print("    [05] SocialFish")
-		print("    [06] santet-online")
-		print("    [07] SpazSMS\n")
-		print("    [00] Back to main menu\n")
-		sspoof = input("$zzz ")
+		print "\n    [01] KnockMail"
+		print "    [02] Spammer-Grab"
+		print "    [03] Hac"
+		print "    [04] Spammer-Email"
+		print "    [05] SocialFish"
+		print "    [06] santet-online"
+		print "    [07] SpazSMS\n"
+		print "    [00] Back to main menu\n"
+		sspoof = raw_input("$zzz ")
 		
 		if sspoof == "01" or sspoof == "1":
 			knockmail()
@@ -449,28 +446,28 @@ def main():
 		elif sspoof == "00" or sspoof == "0":
 			restart_program()
 		else:
-			print("\nERROR: Wrong Input")
+			print "\nERROR: Wrong Input"
 			timeout(2)
 			restart_program()
 	
 	elif zzz == "8" or zzz == "08":
-		print("\n    [01] SpiderBot")
-		print("    [02] Ngrok")
-		print("    [03] Sudo")
-		print("    [04] Ubuntu")
-		print("    [05] Fedora")
-		print("    [06] Kali Nethunter")
-		print("    [07] VCRT")
-		print("    [08] E-Code")
-		print("    [09] Termux-Styling")
-		print("    [10] PassGen")
-		print("    [11] xl-py")
-		print("    [12] BeanShell")
-		print("    [13] WebConn")
-		print("    [14] TouchUrl")
-		print("    [15] Textr\n")
-		print("    [00] Главное меню\n")
-		moretool = input("$zzz ")
+		print "\n    [01] SpiderBot"
+		print "    [02] Ngrok"
+		print "    [03] Sudo"
+		print "    [04] Ubuntu"
+		print "    [05] Fedora"
+		print "    [06] Kali Nethunter"
+		print "    [07] VCRT"
+		print "    [08] E-Code"
+		print "    [09] Termux-Styling"
+		print "    [10] PassGen"
+		print "    [11] xl-py"
+		print "    [12] BeanShell"
+		print "    [13] WebConn"
+		print "    [14] TouchUrl"
+		print "    [15] Textr\n"
+		print "    [00] Главное меню\n"
+		moretool = raw_input("$zzz ")
 		
 		if moretool == "01" or moretool == "1":
 			spiderbot()
@@ -505,7 +502,7 @@ def main():
 		elif moretool == "00" or moretool == "0":
 			restart_program()
 		else:
-			print("\nERROR: Wrong Input")
+			print "\nERROR: Wrong Input"
 			timeout(2)
 			restart_program()
 	
@@ -513,7 +510,7 @@ def main():
 		sys.exit()
 	
 	else:
-		print("\nERROR: Wrong Input")
+		print "\nERROR: Wrong Input"
 		timeout(2)
 		restart_program()
 

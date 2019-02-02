@@ -1,0 +1,547 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"i",
+				"import"
+			],
+			[
+				"html",
+				"m-template:html\tm-template-html-o"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/zzz/Documents/zzz/demo.sh",
+			"settings":
+			{
+				"buffer_size": 11281,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/zzz/Documents/zzz/test.sh",
+			"settings":
+			{
+				"buffer_size": 43,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "# -*- coding: utf-8 -*-\n##\nimport os\nimport sys\nfrom time import sleep as timeout\nfrom core.zzzcore import *\n\ndef main():\n    banner()\n    print \"   [01] Сбор Информации\"\n    print \"   [02] Сканер Уязвимостей\"\n    print \"   [03] Стресс-Тестирование\"\n    print \"   [04] Пароль Атаки\"\n    print \"   [05] Веб-Хакинга\"\n    print \"   [06] Инструменты Эксплуатации\"\n    print \"   [07] Sniffing & Spoofing\"\n    print \"   [08] Другие\\n\"\n    print \"   [10] Выход\\n\"\n    zzz = raw_input(\"$zzz \")\n    \n    if zzz == \"1\" or zzz == \"01\":\n        print \"\\n    [01] Nmap\"\n        print \"    [02] Red Hawk\"\n        print \"    [03] D-Tect\"\n        print \"    [04] sqlmap\"\n        print \"    [05] Infoga\"\n        print \"    [06] ReconDog\"\n        print \"    [07] AndroZenmap\"\n        print \"    [08] sqlmate\"\n        print \"    [09] AstraNmap\"\n        print \"    [10] WTF\"\n        print \"    [11] Easymap\"\n        print \"    [12] BlackBox\"\n        print \"    [13] XD3v\"\n        print \"    [14] Crips\"\n        print \"    [15] SIR\"\n        print \"    [16] EvilURL\"\n        print \"    [17] Striker\"\n        print \"    [18] Xshell\"\n        print \"    [19] OWScan\"\n        print \"    [20] OSIF\"\n        print \"    [21] Devploit\"\n        print \"    [22] Namechk\"\n        print \"    [23] AUXILE\"\n        print \"    [24] inther\"\n        print \"    [25] GINF\\n\"\n        print \"    [00] Главное меню\\n\"\n        infogathering = raw_input(\"$zzz \")\n        \n        if infogathering == \"01\" or infogathering == \"1\":\n            nmap()\n        elif infogathering == \"02\" or infogathering == \"2\":\n            red_hawk()\n        elif infogathering == \"03\" or infogathering == \"3\":\n            dtect()\n        elif infogathering == \"04\" or infogathering == \"4\":\n            sqlmap()\n        elif infogathering == \"05\" or infogathering == \"5\":\n            infoga()\n        elif infogathering == \"06\" or infogathering == \"6\":\n            reconDog()\n        elif infogathering == \"07\" or infogathering == \"7\":\n            androZenmap()\n        elif infogathering == \"08\" or infogathering == \"8\":\n            sqlmate()\n        elif infogathering == \"09\" or infogathering == \"9\":\n            astraNmap()\n        elif infogathering == \"10\":\n            wtf()\n        elif infogathering == \"11\":\n            easyMap()\n        elif infogathering == \"12\":\n            blackbox()\n        elif infogathering == \"13\":\n            xd3v()\n        elif infogathering == \"14\":\n            crips()\n        elif infogathering == \"15\":\n            sir()\n        elif infogathering == \"16\":\n            evilURL()\n        elif infogathering == \"17\":\n            striker()\n        elif infogathering == \"18\":\n            xshell()\n        elif infogathering == \"19\":\n            owscan()\n        elif infogathering == \"20\":\n            osif()\n        elif infogathering == \"21\":\n            devploit()\n        elif infogathering == \"22\":\n            namechk()\n        elif infogathering == \"23\":\n            auxile()\n        elif infogathering == \"24\":\n            inther()\n        elif infogathering == \"25\":\n            ginf()\n        elif infogathering == \"00\" or infogathering == \"0\":\n            restart_program()\n        else:\n            print \"\\nОшибка: неверный ввод\"\n            timeout(2)\n            restart_program()\n\n    elif zzz == \"2\" or zzz == \"02\":\n        print \"\\n    [01] Nmap\"\n        print \"    [02] AndroZenmap\"\n        print \"    [03] AstraNmap\"\n        print \"    [04] Easymap\"\n        print \"    [05] Red Hawk\"\n        print \"    [06] D-Tect\"\n        print \"    [07] Damn Small SQLi Scanner\"\n        print \"    [08] SQLiv\"\n        print \"    [09] sqlmap\"\n        print \"    [10] sqlscan\"\n        print \"    [11] Wordpresscan\"\n        print \"    [12] WPScan\"\n        print \"    [13] sqlmate\"\n        print \"    [14] wordpresscan\"\n        print \"    [15] WTF\"\n        print \"    [16] Rang3r\"\n        print \"    [17] Striker\"\n        print \"    [18] Routersploit\"\n        print \"    [19] Xshell\"\n        print \"    [20] SH33LL\"\n        print \"    [21] BlackBox\"\n        print \"    [22] XAttacker\"\n        print \"    [23] OWScan\\n\"\n        print \"    [00] Back to main menu\\n\"\n        vulnscan = raw_input(\"$zzz \")\n        \n        if vulnscan == \"01\" or vulnscan == \"1\":\n            nmap()\n        elif vulnscan == \"02\" or vulnscan == \"2\":\n            androZenmap()\n        elif vulnscan == \"03\" or vulnscan == \"3\":\n            astraNmap()\n        elif vulnscan == \"04\" or vulnscan == \"4\":\n            easyMap()\n        elif vulnscan == \"05\" or vulnscan == \"5\":\n            red_hawk()\n        elif vulnscan == \"06\" or vulnscan == \"6\":\n            dtect()\n        elif vulnscan == \"07\" or vulnscan == \"7\":\n            dsss()\n        elif vulnscan == \"08\" or vulnscan == \"8\":\n            sqliv()\n        elif vulnscan == \"09\" or vulnscan == \"9\":\n            sqlmap()\n        elif vulnscan == \"10\":\n            sqlscan()\n        elif vulnscan == \"11\":\n            wordpreSScan()\n        elif vulnscan == \"12\":\n            wpscan()\n        elif vulnscan == \"13\":\n            sqlmate()\n        elif vulnscan == \"14\":\n            wordpresscan()\n        elif vulnscan == \"15\":\n            wtf()\n        elif vulnscan == \"16\":\n            rang3r()\n        elif vulnscan == \"17\":\n            striker()\n        elif vulnscan == \"18\":\n            routersploit()\n        elif vulnscan == \"19\":\n            xshell()\n        elif vulnscan == \"20\":\n            sh33ll()\n        elif vulnscan == \"21\":\n            blackbox()\n        elif vulnscan == \"22\":\n            xattacker()\n        elif vulnscan == \"23\":\n            owscan()\n        elif vulnscan == \"00\" or vulnscan == \"0\":\n            restart_program()\n        else:\n            print \"\\nERROR: Wrong Input\"\n            timeout(2)\n            restart_program()\n    \n    elif zzz == \"3\" or zzz == \"03\":\n        print \"\\n    [01] Torshammer\"\n        print \"    [02] Slowloris\"\n        print \"    [03] Fl00d & Fl00d2\"\n        print \"    [04] GoldenEye\"\n        print \"    [05] Xerxes\"\n        print \"    [06] Planetwork-DDOS\"\n        print \"    [07] Hydra\"\n        print \"    [08] Black Hydra\"\n        print \"    [09] Xshell\"\n        print \"    [10] santet-online\\n\"\n        print \"    [00] Back to main menu\\n\"\n        stresstest = raw_input(\"$zzz \")\n        \n        if stresstest == \"01\" or stresstest == \"1\":\n            torshammer()\n        elif stresstest == \"02\" or stresstest == \"2\":\n            slowloris()\n        elif stresstest == \"03\" or stresstest == \"3\":\n            fl00d12()\n        elif stresstest == \"04\" or stresstest == \"4\":\n            goldeneye()\n        elif stresstest == \"05\" or stresstest == \"5\":\n            xerxes()\n        elif stresstest == \"06\" or stresstest == \"6\":\n            planetwork_ddos()\n        elif stresstest == \"07\" or stresstest == \"7\":\n            hydra()\n        elif stresstest == \"08\" or stresstest == \"8\":\n            black_hydra()\n        elif stresstest == \"09\" or stresstest == \"9\":\n            xshell()\n        elif stresstest == \"10\":\n            sanlen()\n        elif stresstest == \"00\" or stresstest == \"0\":\n            restart_program()\n        else:\n            print \"\\nERROR: Wrong Input\"\n            timeout(2)\n            restart_program()\n    \n    elif zzz == \"4\" or zzz == \"04\":\n        print \"\\n    [01] Hydra\"\n        print \"    [02] Facebook Brute Force\"\n        print \"    [03] Facebook Brute Force 2\"\n        print \"    [04] Facebook Brute Force 3\"\n        print \"    [05] Black Hydra\"\n        print \"    [06] Hash Buster\"\n        print \"    [07] 1337Hash\"\n        print \"    [08] Cupp\"\n        print \"    [09] InstaHack\"\n        print \"    [10] Indonesian Wordlist\"\n        print \"    [11] Xshell\"\n        print \"    [12] Social-Engineering\"\n        print \"    [13] BlackBox\"\n        print \"    [14] Hashzer\"\n        print \"    [15] Hasher\"\n        print \"    [16] Hash-Generator\"\n        print \"    [17] nk26\"\n        print \"    [18] Hasherdotid\\n\"\n        print \"    [00] Back to main menu\\n\"\n        passtak = raw_input(\"$zzz \")\n        \n        if passtak == \"01\" or passtak == \"1\":\n            hydra()\n        elif passtak == \"02\" or passtak == \"2\":\n            facebook_bruteForce()\n        elif passtak == \"03\" or passtak == \"3\":\n            facebook_BruteForce()\n        elif passtak == \"04\" or passtak == \"4\":\n            fbBrute()\n        elif passtak == \"05\" or passtak == \"5\":\n            black_hydra()\n        elif passtak == \"06\" or passtak == \"6\":\n            hash_buster()\n        elif passtak == \"07\" or passtak == \"7\":\n            leethash()\n        elif passtak == \"08\" or passtak == \"8\":\n            cupp()\n        elif passtak == \"09\" or passtak == \"9\":\n            instaHack()\n        elif passtak == \"10\":\n            indonesian_wordlist()\n        elif passtak == \"11\":\n            xshell()\n        elif passtak == \"12\":\n            social()\n        elif passtak == \"13\":\n            blackbox()\n        elif passtak == \"14\":\n            hashzer()\n        elif passtak == \"15\":\n            hasher()\n        elif passtak == \"16\":\n            hashgenerator()\n        elif passtak == \"17\":\n            nk26()\n        elif passtak == \"18\":\n            hasherdotid()\n        elif passtak == \"00\" or passtak == \"0\":\n            restart_program()\n        else:\n            print \"\\nERROR: Wrong Input\"\n            timeout(2)\n            restart_program()\n    \n    elif zzz == \"5\" or zzz == \"05\":\n        print \"\\n    [01] sqlmap\"\n        print \"    [02] Webdav\"\n        print \"    [03] xGans\"\n        print \"    [04] Webdav Mass Exploit\"\n        print \"    [05] WPSploit\"\n        print \"    [06] sqldump\"\n        print \"    [07] Websploit\"\n        print \"    [08] sqlmate\"\n        print \"    [09] sqlokmed\"\n        print \"    [10] zones\"\n        print \"    [11] Xshell\"\n        print \"    [12] SH33LL\"\n        print \"    [13] XAttacker\"\n        print \"    [14] XSStrike\"\n        print \"    [15] Breacher\"\n        print \"    [16] OWScan\"\n        print \"    [17] ko-dork\"\n        print \"    [18] ApSca\"\n        print \"    [19] amox\"\n        print \"    [20] FaDe\"\n        print \"    [21] AUXILE\"\n        print \"    [22] HPB\"\n        print \"    [23] inther\\n\"\n        print \"    [00] Back to main menu\\n\"\n        webhack = raw_input(\"$zzz \")\n        \n        if webhack == \"01\" or webhack == \"1\":\n            sqlmap()\n        elif webhack == \"02\" or webhack == \"2\":\n            webdav()\n        elif webhack == \"03\" or webhack == \"3\":\n            xGans()\n        elif webhack == \"04\" or webhack == \"4\":\n            webmassploit()\n        elif webhack == \"05\" or webhack == \"5\":\n            wpsploit()\n        elif webhack == \"06\" or webhack == \"6\":\n            sqldump()\n        elif webhack == \"07\" or webhack == \"7\":\n            websploit()\n        elif webhack == \"08\" or webhack == \"8\":\n            sqlmate()\n        elif webhack == \"09\" or webhack == \"9\":\n            sqlokmed()\n        elif webhack == \"10\":\n            zones()\n        elif webhack == \"11\":\n            xshell()\n        elif webhack == \"12\":\n            sh33ll()\n        elif webhack == \"13\":\n            xattacker()\n        elif webhack == \"14\":\n            xsstrike()\n        elif webhack == \"15\":\n            breacher()\n        elif webhack == \"16\":\n            owscan()\n        elif webhack == \"17\":\n            kodork()\n        elif webhack == \"18\":\n            apsca()\n        elif webhack == \"19\":\n            amox()\n        elif webhack == \"20\":\n            fade()\n        elif webhack == \"21\":\n            auxile()\n        elif webhack == \"22\":\n            hpb()\n        elif webhack == \"23\":\n            inther()\n        elif webhack == \"00\" or webhack == \"0\":\n            restart_program()\n        else:\n            print \"\\nERROR: Wrong Input\"\n            timeout(2)\n            restart_program()\n    elif zzz == \"6\" or zzz == \"06\":\n        print \"\\n    [01] Metasploit\"\n        print \"    [02] commix\"\n        print \"    [03] sqlmap\"\n        print \"    [04] Brutal\"\n        print \"    [05] A-Rat\"\n        print \"    [06] WPSploit\"  \n        print \"    [07] Websploit\"\n        print \"    [08] Routersploit\"\n        print \"    [09] BlackBox\"\n        print \"    [10] XAttacker\"\n        print \"    [11] TXTool\"\n        print \"    [12] MSF-Pg\"\n        print \"    [13] Binary Exploitation\\n\"\n        print \"    [00] Back to main menu\\n\"\n        exploitool = raw_input(\"$zzz \")\n        \n        if exploitool == \"01\" or exploitool == \"1\":\n            metasploit()\n        elif exploitool == \"02\" or exploitool == \"2\":\n            commix()\n        elif exploitool == \"03\" or exploitool == \"3\":\n            sqlmap()\n        elif exploitool == \"04\" or exploitool == \"4\":\n            brutal()\n        elif exploitool == \"05\" or exploitool == \"5\":\n            a_rat()\n        elif exploitool == \"06\" or exploitool == \"6\":\n            wpsploit()\n        elif exploitool == \"07\" or exploitool == \"7\":\n            websploit()\n        elif exploitool == \"08\" or exploitool == \"8\":\n            routersploit()\n        elif exploitool == \"09\" or exploitool == \"9\":\n            blackbox()\n        elif exploitool == \"10\":\n            xattacker()\n        elif exploitool == \"11\":\n            txtool()\n        elif exploitool == \"12\":\n            msfpg()\n        elif exploitool == \"13\":\n            binploit()\n        elif exploitool == \"00\" or exploitool == \"0\":\n            restart_program()\n        else:\n            print \"\\nERROR: Wrong Input\"\n            timeout(2)\n            restart_program()\n    elif zzz == \"7\" or zzz == \"07\":\n        print \"\\n    [01] KnockMail\"\n        print \"    [02] Spammer-Grab\"\n        print \"    [03] Hac\"\n        print \"    [04] Spammer-Email\"\n        print \"    [05] SocialFish\"\n        print \"    [06] santet-online\"\n        print \"    [07] SpazSMS\\n\"\n        print \"    [00] Back to main menu\\n\"\n        sspoof = raw_input(\"$zzz \")\n        \n        if sspoof == \"01\" or sspoof == \"1\":\n            knockmail()\n        elif sspoof == \"02\" or sspoof == \"2\":\n            spammer_grab()\n        elif sspoof == \"03\" or sspoof == \"3\":\n            hac()\n        elif sspoof == \"04\" or sspoof == \"4\":\n            spammer_email()\n        elif sspoof == \"05\" or sspoof == \"5\":\n            socfish()\n        elif sspoof == \"06\" or sspoof == \"6\":\n            sanlen()\n        elif sspoof == \"07\" or sspoof == \"7\":\n            spazsms()\n        elif sspoof == \"00\" or sspoof == \"0\":\n            restart_program()\n        else:\n            print \"\\nERROR: Wrong Input\"\n            timeout(2)\n            restart_program()\n    \n    elif zzz == \"8\" or zzz == \"08\":\n        print \"\\n    [01] SpiderBot\"\n        print \"    [02] Ngrok\"\n        print \"    [03] Sudo\"\n        print \"    [04] Ubuntu\"\n        print \"    [05] Fedora\"\n        print \"    [06] Kali Nethunter\"\n        print \"    [07] VCRT\"\n        print \"    [08] E-Code\"\n        print \"    [09] Termux-Styling\"\n        print \"    [10] PassGen\"\n        print \"    [11] xl-py\"\n        print \"    [12] BeanShell\"\n        print \"    [13] WebConn\"\n        print \"    [14] TouchUrl\"\n        print \"    [15] Textr\\n\"\n        print \"    [00] Главное меню\\n\"\n        moretool = raw_input(\"$zzz \")\n        \n        if moretool == \"01\" or moretool == \"1\":\n            spiderbot()\n        elif moretool == \"02\" or moretool == \"2\":\n            ngrok()\n        elif moretool == \"03\" or moretool == \"3\":\n            sudo()\n        elif moretool == \"04\" or moretool == \"4\":\n            ubuntu()\n        elif moretool == \"05\" or moretool == \"5\":\n            fedora()\n        elif moretool == \"06\" or moretool == \"6\":\n            nethunter()\n        elif moretool == \"07\" or moretool == \"7\":\n            vcrt()\n        elif moretool == \"08\" or moretool == \"8\":\n            ecode()\n        elif moretool == \"09\" or moretool == \"9\":\n            stylemux()\n        elif moretool == \"10\":\n            passgencvar()\n        elif moretool == \"11\":\n            xlPy()\n        elif moretool == \"12\":\n            beanshell()\n        elif moretool == \"13\":\n            webconn()\n        elif moretool == \"14\":\n            touchurl()\n        elif moretool == \"15\":\n            textr()\n        elif moretool == \"00\" or moretool == \"0\":\n            restart_program()\n        else:\n            print \"\\nERROR: Wrong Input\"\n            timeout(2)\n            restart_program()\n    \n    elif zzz == \"10\":\n        sys.exit()\n    \n    else:\n        print \"\\nERROR: Wrong Input\"\n        timeout(2)\n        restart_program()\n\nif __name__ == \"__main__\":\n    main()",
+			"file": "/C/Users/zzz/Documents/zzz/zzz.py",
+			"file_size": 13151,
+			"file_write_time": 131936057060000000,
+			"settings":
+			{
+				"buffer_size": 16460,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "zzzcore.py",
+			"settings":
+			{
+				"buffer_size": 31984,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				"Syntax Check"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pip",
+				"Package Control: Install Package"
+			],
+			[
+				"venv",
+				"Virtualenv: Activate"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"s",
+				"Git: Status"
+			],
+			[
+				"htt",
+				"HTTP Requester"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"sftp",
+				"SFTP: Browse Server…"
+			],
+			[
+				"python",
+				"Enable Python Fix Imports for this file (until restart)"
+			],
+			[
+				"py",
+				"Build With: Python"
+			],
+			[
+				"ter",
+				"Terminal: Open in project folder"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"bash",
+				"Set Syntax: Bourne Again Shell (bash)"
+			],
+			[
+				"scr",
+				"Set Syntax: R Console"
+			],
+			[
+				"impo",
+				"Enable Python Fix Imports (until restart)"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"bower",
+				"Bower: Install"
+			],
+			[
+				"pac",
+				"Package Control: Disable Package"
+			],
+			[
+				"html",
+				"Snippet: m-template-html-o"
+			],
+			[
+				"sdn",
+				"Snippet: Materialize js cdn"
+			],
+			[
+				"sni",
+				"Snippet: Materialize CSS for sticky footer"
+			],
+			[
+				"snippet",
+				"Snippet: html"
+			],
+			[
+				"build",
+				"Set Syntax: NAnt Build File"
+			],
+			[
+				"",
+				"Bower: Install"
+			],
+			[
+				"bower install dependencies b",
+				"Bower: Install dependencies"
+			],
+			[
+				"bow",
+				"Bower: Configure project"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"vim",
+				"View: Toggle Menu"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 98.0,
+		"history":
+		[
+			"help",
+			"pip",
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/zzz/Documents/zzz",
+		"/C/Users/zzz/Documents/zzz/core"
+	],
+	"file_history":
+	[
+		"/C/Users/zzz/AppData/Roaming/Sublime Text 3/Packages/Terminality/Terminality.sublime-settings",
+		"/C/Users/zzz/AppData/Roaming/Sublime Text 3/Packages/User/Terminality.sublime-settings",
+		"/C/Users/zzz/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/zzz/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/zzz/AppData/Roaming/Sublime Text 3/Installed Packages/ShellScriptImproved.sublime-package",
+		"/C/Users/zzz/Documents/zzz/zzz.py",
+		"/C/Users/zzz/AppData/Roaming/Sublime Text 3/Packages/ShellScriptImproved/miscellaneous/demo.sh",
+		"/C/Users/zzz/AppData/Roaming/Sublime Text 3/Packages/Virtualenv/Virtualenv.sublime-settings",
+		"/C/Users/zzz/AppData/Roaming/Sublime Text 3/Packages/User/Virtualenv.sublime-settings",
+		"/C/Users/zzz/AppData/Roaming/Sublime Text 3/Packages/User/python3.sublime-build",
+		"/C/Users/zzz/Documents/zzz/.gitignore",
+		"/C/Users/zzz/Documents/go/go-queue-example/cmd/queue-example-web/main.go",
+		"/C/Users/zzz/Documents/go/go-queue-example/cmd/queue-example-worker/main.go",
+		"/C/Users/zzz/Documents/text.md",
+		"/C/Users/zzz/Pictures/foo.txt",
+		"/C/Users/zzz/Pictures/Untitled.rst",
+		"/C/Users/zzz/Documents/cli/heroku-jupyter-lab/manifest.yml",
+		"/C/Users/zzz/Documents/cli/heroku-jupyter-lab/start_jupyter",
+		"/C/Users/zzz/Documents/cli/heroku-jupyter-lab/app.json",
+		"/C/Users/zzz/Documents/cli/heroku-jupyter-lab/index.html",
+		"/C/Users/zzz/Documents/cli/heroku-jupyter-lab/environments/default.yml",
+		"/C/Users/zzz/Documents/cli/heroku-jupyter-lab/environments/multi_kernel.yml",
+		"/C/Users/zzz/PycharmProjects/myzzz/list.py",
+		"/C/Users/zzz/PycharmProjects/myzzz/http.http",
+		"/C/Users/zzz/AppData/Roaming/Sublime Text 3/Packages/Bang Search/README.md",
+		"/C/Users/zzz/AppData/Roaming/Sublime Text 3/Packages/User/sftp_servers/SFTP.default-config.json",
+		"/C/Users/zzz/AppData/Roaming/Sublime Text 3/Packages/User/SFTP.errors.log",
+		"/C/Users/zzz/AppData/Roaming/Sublime Text 3/Packages/ShellScriptImproved/README.md",
+		"/C/Users/zzz/AppData/Roaming/Sublime Text 3/Packages/User/sftp_servers/SFTP.mmm-config.json",
+		"/C/Users/zzz/AppData/Roaming/Sublime Text 3/Packages/SFTP/SFTP.sublime-settings",
+		"/C/users/zzz/appdata/local/temp/sublime-sftp-browse-1548885992/SFTP.default-config.json/home/mmm/hack-on-pyramid/views.py",
+		"/C/users/zzz/appdata/local/temp/sublime-sftp-browse-1548891612/SFTP.default-config.json/home/mmm/hack-on-pyramid/src/pyramid/config/views.py",
+		"/C/users/zzz/appdata/local/temp/sublime-sftp-browse-1548892794/SFTP.default-config.json/home/mmm/jupyterhub_config.py",
+		"/C/users/zzz/appdata/local/temp/sublime-sftp-browse-1548899499/SFTP.default-config.json/home/mmm/.bash_logout",
+		"/C/users/zzz/appdata/local/temp/sublime-sftp-browse-1548899704/SFTP.default-config.json/home/mmm/.bash_profile",
+		"/C/users/zzz/appdata/local/temp/sublime-sftp-browse-1548899843/SFTP.default-config.json/home/mmm/.bashrc",
+		"/C/Users/zzz/cli.py",
+		"/C/Users/zzz/sftp-config.json",
+		"/C/users/zzz/appdata/local/temp/sublime-sftp-browse-1548886116/SFTP.default-config.json/home/mmm/hack-on-pyramid/__init__.py",
+		"/C/users/zzz/appdata/local/temp/sublime-sftp-browse-1548891469/SFTP.default-config.json/home/mmm/pyramid_notebook/pyramid_notebook/demo/auth.py",
+		"/C/users/zzz/appdata/local/temp/sublime-sftp-browse-1548886230/SFTP.default-config.json/home/mmm/hack-on-pyramid/shell",
+		"/C/users/zzz/appdata/local/temp/sublime-sftp-browse-1548888137/SFTP.default-config.json/home/mmm/pyramid_notebook/pyramid_notebook/demo/auth.py",
+		"/C/users/zzz/appdata/local/temp/sublime-sftp-browse-1548883960/SFTP.default-config.json/home/mmm/hack-on-pyramid/HACKING.txt",
+		"/C/users/zzz/appdata/local/temp/sublime-sftp-browse-1548883821/SFTP.default-config.json/home/mmm/hack-on-pyramid/TODO.txt",
+		"/C/users/zzz/appdata/local/temp/sublime-sftp-browse-1548883731/SFTP.default-config.json/home/mmm/hack-on-pyramid/.coverage",
+		"/C/users/zzz/appdata/local/temp/sublime-sftp-browse-1548878929/SFTP.default-config.json/home/mmm/site/public/index.html",
+		"/C/Users/zzz/AppData/Roaming/Sublime Text 3/Packages/User/goTranslate.sublime-settings",
+		"/C/Users/zzz/AppData/Roaming/Sublime Text 3/Packages/Inline Google Translate/goTranslate.sublime-settings"
+	],
+	"find":
+	{
+		"height": 70.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/zzz/Documents/zzz/demo.sh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11281,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11,
+								0
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/ShellScriptImproved/Shell-Unix-Generic.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/zzz/Documents/zzz/test.sh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 43,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								43,
+								43
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/ShellScriptImproved/Shell-Unix-Generic.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/zzz/Documents/zzz/zzz.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16460,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7818,
+								7818
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5616.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "zzzcore.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 31984,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								107,
+								107
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 70.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 246.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 180.0
+	},
+	"output.sftp":
+	{
+		"height": 305.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 180.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "zzzcore.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"untitled"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 277.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
