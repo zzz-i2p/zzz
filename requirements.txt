@@ -1,0 +1,2 @@
+future==0.17.1
+modernize==0.6.1
